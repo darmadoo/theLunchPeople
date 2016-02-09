@@ -1,0 +1,36 @@
+
+    [
+      {
+        "userName": "darmadoo",
+        "firstName": "Mark",
+        "lastName": "Darmadi",
+        "DOB": "10/10/1994",
+        "hobbies": [
+          "hearthstone",
+          "running",
+          "soccer"
+        ]
+      },
+      {
+        "userName": "mrothenbuhler",
+        "firstName": "Micah",
+        "lastName": "Rothenbuhler",
+        "DOB": "01/03/1994",
+        "hobbies": [
+          "hearthstone",
+          "running",
+          "soccer"
+        ]
+      },
+      {
+        "userName": "dradovich",
+        "firstName": "Dan",
+        "lastName": "Radovich",
+        "DOB": "03/04/1994",
+        "hobbies": [
+          "hearthstone",
+          "running",
+          "soccer"
+        ]
+      }
+    ]
