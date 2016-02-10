@@ -40,8 +40,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/signup', signup.view);
+app.get('/my_profile', index.my_profile);
+app.get('/my_lunches', index.my_lunches);
+app.get('/confirmation', index.confirmation);
+app.get('/current_room', index.current_room);
 
-app.post('/', home.view);
+app.post('/home', index.search);
 
 // Example route
 // app.get('/users', user.list);
