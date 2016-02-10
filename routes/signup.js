@@ -1,4 +1,5 @@
 
 exports.view = function(req, res){
-  res.render('signup');
+	console.log(req.query.name);
+	res.render('signup');
 };
