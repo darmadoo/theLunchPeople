@@ -13,7 +13,7 @@ function initializePage() {
 
 	// $('#colorBtn').click(randomizeColors);
 
-	$(".login-btn").click(check);
+	//$(".login-btn").click(check);
 }
 
 function check(e){

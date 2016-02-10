@@ -12,6 +12,9 @@ var index = require('./routes/index');
 var home = require('./routes/home');
 var data = require('./routes/data');
 var signup = require('./routes/signup');
+var my_profile = require('./routes/my_profile');
+var my_lunches = require('./routes/my_lunches');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -42,6 +45,10 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/data', data.randomPalette);
 app.get('/signup', signup.view);
+
+app.get('/my_profile', my_profile.view);
+app.get('/my_lunches', my_lunches.view);
+
 app.post('/', home.view);
 // Example route
 // app.get('/users', user.list);

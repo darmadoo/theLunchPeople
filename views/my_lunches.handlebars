@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- confirmed: we have bootstrap -->
+    <div class="container">
+      <!-- begin nav bar -->
+      <div id='cssmenu'>
+        <ul>
+          <li class='active'><a href='/home'><span>Home</span></a></li>
+          <li><a href='/my_lunches'><span>Past Lunches</span></a></li>
+          <li class='last'><a href='/my_profile'><span>My Profile</span></a></li>
+          <li>
+            <form method="post" action="/search">
+              <input type="text" class="form-control" placeholder="Search For Coworkers" name="srch-term" id="srch-term">
+            </form>
+          </li>
+        </ul>
+      </div>
+      <!-- end nav bar -->
+
+      <div class="row">
+      </div>
+      <div class="row">
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
