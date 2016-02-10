@@ -40,3 +40,23 @@ exports.view = function(req, res){
 	]
   });
 };
+
+exports.search = function(req, res){
+  res.render('search');
+};
+
+exports.my_profile = function(req,res){
+  res.render('my_profile');
+}
+
+exports.my_lunches = function(req, res) {
+	res.render('my_lunches');
+}
+
+exports.confirmation = function(req, res) {
+	res.render('confirmation');
+}
+
+exports.current_room = function(req, res) {
+	res.render('current_room');
+}
