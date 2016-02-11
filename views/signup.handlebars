@@ -10,15 +10,17 @@
   </head>
   <body>
     <div class="container">
-      <form action="/" method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="firstname"><br>
+      <form action="/index" method="post">
+        <label for="name">First Name:</label>
+        <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname">
+        <label for="name">Last Name:</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname">
         <label for="email">Company email:</label>
-        <input type="text" name="lastname"><br>
+        <input type="text" class="form-control" id="email" placeholder="Email" name="email">
         <label for="password">Password:</label>
-        <input type="text" name="password"><br>
+        <input type="password" class="form-control" id="pass" placeholder="password" name="pass">
         <label for="confirmPassword">Confirm password:</label>
-        <input type="text" name="password"><br>
+        <input type="password" class="form-control" id="cpass" placeholder="Confirm password" name="cpass">
         <input type="submit" id="submitBtn" class="btn btn-default"></input>
       </form>
 

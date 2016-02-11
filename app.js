@@ -52,6 +52,8 @@ app.get('/current_room', index.current_room);
 
 
 app.post('/', home.view);
+app.post('/index', index.view);
+app.post('/home', home.receive);
 // Example route
 // app.get('/users', user.list);
 
