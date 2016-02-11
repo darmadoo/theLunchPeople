@@ -9,7 +9,8 @@
           "hearthstone",
           "running",
           "soccer"
-        ]
+        ],
+        "password": "warcraft2"
       },
       {
         "userName": "mrothenbuhler",
@@ -20,7 +21,8 @@
           "hearthstone",
           "running",
           "soccer"
-        ]
+        ],
+        "password": "warcraft2"
       },
       {
         "userName": "dradovich",
@@ -31,6 +33,7 @@
           "hearthstone",
           "running",
           "soccer"
-        ]
+        ],
+        "password": "warcraft2"
       }
     ]
