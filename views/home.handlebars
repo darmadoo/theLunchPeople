@@ -8,43 +8,38 @@
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
   </head>
   <body>
-    <!-- confirmed: we have bootstrap -->
-    <div class="container">
-      <!-- begin nav bar -->
-      <div id='cssmenu'>
-        <ul>
-          <li class='active'><a href='/home'><span>Home</span></a></li>
-          <li><a href='/my_lunches'><span>Past Lunches</span></a></li>
-          <li><a href='/confirmation'><span>Roll</span></a></li>
-          <li><a href='/my_profile'><span>My Profile</span></a></li>
-          <li><a href='/current_room'><span>The Lunch Room</span></a></li>
-          <li class='last'><a href='/'><span>Log Out</span></a></li>
-          <li>
-            <form method="post" action="/home">
-              <input type="text" class="form-control" placeholder="Search For Coworkers" name="srch-term" id="srch-term">
-            </form>
-          </li>
-        </ul>
-      </div>
-      <!-- end nav bar -->
 
-      <div class="row">
-        <div class="product">
-          <img class="img-responsive" src="images/logo.png" style="margin-top: 40px;"></img>
-        </div>
+    <!-- dropdown menu -->
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="/home">Home</a>
+        <a href="/my_lunches">Past Lunches</a>
+        <a href="/confirmation">Roll</a>
+        <a href="/my_profile">My Profile</a>
+        <a href="/current_room">The Lunch Room</a>
+        <a href="/">Log Out</a>
       </div>
-      <div class="row">
-        <div class="history-container">
-          <div>.</div>
-          <h4 class="homepage-text">Know thy workplace!</h4>
-          <p class="homepage-text">Lunch Roulette is a great way to get to know your co-workers. Click the button below to find a lunch group!</h5>
-          <div style="margin-bottom: 15px; margin-top: 30px;">
-            <a href="/confirmation" class="login-btn">Roll</a>
-          </div>
-          <div>.</div>
+    </div>
+    <!-- end dropdown menu -->
+
+    <div class="row">
+      <div class="product">
+        <img class="img-responsive" src="images/logo.png" style="margin-top: 40px;"></img>
+      </div>
+    </div>
+    <div class="row">
+      <div class="history-container">
+        <div>.</div>
+        <h4 class="homepage-text">Know thy workplace!</h4>
+        <p class="homepage-text">Lunch Roulette is a great way to get to know your co-workers. Click the button below to find a lunch group!</h5>
+        <div style="margin-bottom: 15px; margin-top: 30px;">
+          <a href="/confirmation" class="login-btn">Roll</a>
         </div>
+        <div>.</div>
       </div>
     </div>
 

@@ -1,6 +1,6 @@
-
-    [
-      {
+{
+  "users" : {
+    "darmadoo@thiscompany.com" : {
         "userName": "darmadoo",
         "firstName": "Mark",
         "lastName": "Darmadi",
@@ -11,29 +11,30 @@
           "soccer"
         ],
         "password": "warcraft2"
-      },
-      {
-        "userName": "mrothenbuhler",
-        "firstName": "Micah",
-        "lastName": "Rothenbuhler",
-        "DOB": "01/03/1994",
-        "hobbies": [
-          "hearthstone",
-          "running",
-          "soccer"
-        ],
-        "password": "warcraft2"
-      },
-      {
-        "userName": "dradovich",
-        "firstName": "Dan",
-        "lastName": "Radovich",
-        "DOB": "03/04/1994",
-        "hobbies": [
-          "hearthstone",
-          "running",
-          "soccer"
-        ],
-        "password": "warcraft2"
-      }
-    ]
+    },
+    "mrothenbuhler@thiscompany.com" : {
+      "userName": "mrothenbuhler",
+      "firstName": "Micah",
+      "lastName": "Rothenbuhler",
+      "DOB": "01/03/1994",
+      "hobbies": [
+        "hearthstone",
+        "running",
+        "soccer"
+      ],
+      "password": "warcraft2"
+    },
+    "danradovich@thiscompany.com" : {
+      "userName": "dradovich",
+      "firstName": "Dan",
+      "lastName": "Radovich",
+      "DOB": "03/04/1994",
+      "hobbies": [
+        "hearthstone",
+        "running",
+        "soccer"
+      ],
+      "password": "warcraft2"
+    }
+  } // end "users"
+}

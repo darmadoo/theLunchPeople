@@ -8,27 +8,24 @@
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
   </head>
   <body>
     <!-- confirmed: we have bootstrap -->
     <div class="container">
-      <!-- begin nav bar -->
-      <div id='cssmenu'>
-        <ul>
-          <li><a href='/home'><span>Home</span></a></li>
-          <li><a href='/my_lunches'><span>Past Lunches</span></a></li>
-          <li><a href='/confirmation'><span>Roll</span></a></li>
-          <li><a href='/my_profile'><span>My Profile</span></a></li>
-          <li class="active"><a href='/current_room'><span>The Lunch Room</span></a></li>
-          <li class='last'><a href='/'><span>Log Out</span></a></li>
-          <li>
-            <form method="post" action="/home">
-              <input type="text" class="form-control" placeholder="Search For Coworkers" name="srch-term" id="srch-term">
-            </form>
-          </li>
-        </ul>
+      <!-- dropdown menu -->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="/home">Home</a>
+          <a href="/my_lunches">Past Lunches</a>
+          <a href="/confirmation">Roll</a>
+          <a href="/my_profile">My Profile</a>
+          <a href="/current_room">The Lunch Room</a>
+          <a href="/">Log Out</a>
+        </div>
       </div>
-      <!-- end nav bar -->
+      <!-- end dropdown menu -->
 
       <h3 class="homepage-text">This is your current group. Watch it grow like a chia pet.</h3>
 
