@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
   </head>
-  <body>
+  <body style="overflow: hidden;">
 
     <!-- dropdown menu -->
     <div class="dropdown">
@@ -27,19 +27,18 @@
     <!-- end dropdown menu -->
 
     <div class="row">
-      <div class="product">
-        <img class="img-responsive" src="images/logo.png" style="margin-top: 40px;"></img>
-      </div>
+        <img class="logo logo-standard" src="images/logo.gif" style="margin-top: 40px;"></img>
     </div>
     <div class="row">
       <div class="history-container">
         <div>.</div>
-        <h3 class="homepage-text"> Welcome! {{first}} {{last}} </h3>
-        <h4 class="homepage-text">Know thy workplace!</h4>
-        <p class="homepage-text">Lunch Roulette is a great way to get to know your co-workers. Click the button below to find a lunch group!</h5>
+        <h3 class="homepage-text"> Welcome, {{first}} {{last}}! </h3>
+        <p class="homepage-text">Lunch People is a great way to get to know your co-workers. You can look at their profiles, find a lunch group, and learn about the company!</h5>
+          <!--
         <div style="margin-bottom: 15px; margin-top: 30px;">
           <a href="/confirmation" class="login-btn">Roll</a>
         </div>
+      -->
         <div>.</div>
       </div>
     </div>
