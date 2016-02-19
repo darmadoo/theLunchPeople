@@ -41,18 +41,19 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/home', home.view);
+app.get('/', index.getIndex);
+app.get('/home', home.getHome);
 app.get('/data', data.randomPalette);
 app.get('/signup', signup.view);
 app.get('/my_profile', index.my_profile);
 app.get('/my_lunches', index.my_lunches);
 app.get('/confirmation', index.confirmation);
 app.get('/current_room', index.current_room);
+app.get('/logout', index.logout);
 
 
 app.post('/', home.view);
-app.post('/index', index.view);
+app.post('/index', home.view);
 app.post('/home', home.receive);
 // Example route
 // app.get('/users', user.list);
