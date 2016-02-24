@@ -1,18 +1,23 @@
 body {
 	background-image: none;
-	background: -webkit-linear-gradient(#006c84, #ffccbb);
-	background: -moz-linear-gradient(#006c84, #ffccbb);
-	background: -o-linear-gradient(#006c84, #ffccbb);
-	background: -ms-linear-gradient(#006c84, #ffccbb);
-	background: linear-gradient(#006c84, #ffccbb);
+	background: -webkit-linear-gradient(#D8412F, #F5CA99);
+	background: -moz-linear-gradient(#D8412F, #F5CA99);
+	background: -o-linear-gradient(#D8412F, #F5CA99);
+	background: -ms-linear-gradient(#D8412F, #F5CA99);
+	background: linear-gradient(#D8412F, #F5CA99);
 }
 
 h1,h2,h3,h4,h5,h6,a,div,span,p {
 	color: #ffffff;
 }
 
-.login-btn, .dropbtn{
+.login-btn{
+	background: #D8412F;
+}
+
+.dropbtn{
 	background: #FE7A47;
+	border-radius: 5px;
 }
 
 .history-container{
