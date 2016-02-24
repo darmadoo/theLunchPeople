@@ -13,6 +13,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .dropdown {
   padding-top: 10px;
   padding-left: 10px;
