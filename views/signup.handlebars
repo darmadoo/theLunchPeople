@@ -8,20 +8,22 @@
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body style="background-color: lightblue;">
     <div class="container">
-      <form action="/index" method="post">
+      <form action="/index" method="post" style="margin-top: 20px;">
         <label for="name">First Name:</label>
-        <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname">
+        <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname" required>
         <label for="name">Last Name:</label>
-        <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname">
+        <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname"required>
         <label for="email">Company email:</label>
-        <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+        <input type="text" class="form-control" id="email" placeholder="Email" name="email"required>
+        <label for="email">Myers Briggs Type:</label>
+        <input type="text" class="form-control" id="MBTI" placeholder="MBTI" name="MBTI"required>
         <label for="password">Password:</label>
-        <input type="password" class="form-control" id="pass" placeholder="password" name="pass">
+        <input type="password" class="form-control" id="pass" placeholder="password" name="pass"required>
         <label for="confirmPassword">Confirm password:</label>
-        <input type="password" class="form-control" id="cpass" placeholder="Confirm password" name="cpass">
-        <input type="submit" id="submitBtn" class="btn btn-default"></input>
+        <input type="password" class="form-control" id="cpass" placeholder="Confirm password" name="cpass"required>
+        <input type="submit" id="submitBtn" class="btn btn-default" style="margin-top: 10px;"></input>
       </form>
 
     <!-- scripts -->

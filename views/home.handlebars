@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
   </head>
-  <body>
+  <body style="overflow: hidden;">
 
     <!-- dropdown menu -->
     <div class="dropdown">
@@ -18,25 +18,20 @@
       <div class="dropdown-content">
         <a href="/home">Home</a>
         <a href="/my_lunches">Past Lunches</a>
-        <a href="/confirmation">Roll</a>
         <a href="/my_profile">My Profile</a>
         <a href="/current_room">The Lunch Room</a>
-        <a href="/">Log Out</a>
+        <a href="/logout">Log Out</a>
       </div>
     </div>
     <!-- end dropdown menu -->
 
+    <img class="logo" src="images/logo.gif" style="margin-top: -20px; margin-left: 15%;"></img>
     <div class="row">
-      <div class="product">
-        <img class="img-responsive" src="images/logo.png" style="margin-top: 40px;"></img>
-      </div>
-    </div>
-    <div class="row">
-      <div class="history-container">
+      <div class="history-container" style="margin-top: -5px;">
         <div>.</div>
-        <h3 class="homepage-text"> Welcome! {{first}} {{last}} </h3>
-        <h4 class="homepage-text">Know thy workplace!</h4>
-        <p class="homepage-text">Lunch Roulette is a great way to get to know your co-workers. Click the button below to find a lunch group!</h5>
+        <h2> Welcome, {{first}} {{last}}! </h2>
+        <p class="homepage-text">Lunch People connects you to your co-workers. Here, you can get to know your Lunch People by checking out their work profiles. You can find a lunch group, edit your profile, and learn a lot about your company!</h5>
+        <p class="homepage-text">Check out your profile page <a href="/my_profile">here</a>, or click "Roll" to find a lunch group.</p>
         <div style="margin-bottom: 15px; margin-top: 30px;">
           <a href="/confirmation" class="login-btn">Roll</a>
         </div>
