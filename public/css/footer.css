@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+:root {
+  --red: #D8412F;
+  --orange: #FE7A47;
+  --white: #FCFDFE;
+  --beige: #F5CA99;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -152px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+	padding-top: 5px;
+  height: 152px; 
+}
+.site-footer {
+  background-color: #D8412F;
+}
+.footer-text {
+	color: #FCFDFE;
+	text-align: center;
+}

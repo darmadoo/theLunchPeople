@@ -3,6 +3,12 @@
   margin: 0;
   padding: 0;
 }
+element {
+  --red: #D8412F;
+  --orange: #FE7A47;
+  --white: #FCFDFE;
+  --beige: #F5CA99;
+}
 p, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
