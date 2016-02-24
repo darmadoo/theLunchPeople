@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6,a,div,span,p {
+	color: white;
+}
+body {
+	background-image: none;
+	background-color: #FE7A47;
+}
+.dropbtn {
+	background-color: #D8412F;
+}
+.dropbtn:hover {
+	background-color: #D8412F;
+}
+.dropbtn:active {
+	background-color: #D8412F;
+}
+.homepage-text {
+  font-size: 15pt;
+}
+.edit-profile-link {
+	text-decoration: underline;
+	color: white;
+}
+.edit-profile-link:hover {
+	color: white;
+}
