@@ -7,7 +7,7 @@ body {
 	background: linear-gradient(#D8412F, #F5CA99);
 }
 
-h1,h2,h3,h4,h5,h6,a,div,span,p {
+h1,h2,h3,h4,h5,h6,div,span,p {
 	color: #ffffff;
 }
 
@@ -17,11 +17,21 @@ h1,h2,h3,h4,h5,h6,a,div,span,p {
 
 .dropbtn{
 	background: #FE7A47;
-	border-radius: 5px;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
 }
 
 .history-container{
 	background-color: transparent;
 	height: 25%;
 	border-radius: 5px;
+}
+
+a{
+	color: #000000;
+    text-decoration: underline;
+    cursor: hand;
 }
