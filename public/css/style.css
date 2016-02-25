@@ -129,8 +129,6 @@ h1.confirmation-h1 {
 
 html, body {
   height: 100%;
-  background-image: url("http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393433-1366-768.jpg");
-  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -164,7 +162,6 @@ input, button {
 .cont {
   position: relative;
   height: 100%;
-  background-image: url("http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393433-1366-768.jpg");
   background-size: cover;
   overflow: auto;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -745,4 +742,8 @@ input, button {
   #cssmenu ul li a:before {
     display: none;
   }
+}
+
+.lunch-room-table {
+  font-size: 12pt;
 }
