@@ -61,6 +61,11 @@ exports.current_room = function(req, res) {
 	res.render('current_room');
 }
 
+exports.current_room_b = function(req, res) {
+	res.render('current_room_b');
+}
+
+
 function signupChecks() {
 	return true;
 }

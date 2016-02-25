@@ -51,6 +51,7 @@ app.get('/my_profile', my_profile.get_my_profile);
 app.get('/my_lunches', index.my_lunches);
 app.get('/confirmation', index.confirmation);
 app.get('/current_room', index.current_room);
+app.get('/current_room_b', index.current_room_b);
 app.get('/logout', index.logout);
 app.get('/edit_profile', edit_profile.get);
 app.get('/help', help.view);
