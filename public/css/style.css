@@ -24,6 +24,7 @@ body {
 
 img.logo {
   margin-top: 50px;
+  margin-left: 11px;
   height: 180px;
   width: 280px;
 }
@@ -129,13 +130,8 @@ h1.confirmation-h1 {
 
 html, body {
   height: 100%;
-}
-
-@media (max-width: 768px) {
-  html, p.login__signup{
-    font-size: 50%;
-  }
-
+  background-image: url("http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393433-1366-768.jpg");
+  background-size: cover;
 }
 
 svg {
@@ -162,6 +158,7 @@ input, button {
 .cont {
   position: relative;
   height: 100%;
+  background-image: url("http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393433-1366-768.jpg");
   background-size: cover;
   overflow: auto;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -236,10 +233,10 @@ input, button {
 .login__submit {
   position: relative;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   color: rgba(255, 255, 255, 0.8);
   background: #FF3366;
-  font-size: 11pt;
+  font-size: 13pt;
   border-radius: 3rem;
   cursor: pointer;
   -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
@@ -288,7 +285,7 @@ input, button {
           animation: none;
 }
 .login__signup {
-  font-size: 10pt;
+  font-size: 12pt;
   padding-top: 10px;
   color: #ABA8AE;
 }
@@ -742,8 +739,4 @@ input, button {
   #cssmenu ul li a:before {
     display: none;
   }
-}
-
-.lunch-room-table {
-  font-size: 12pt;
 }

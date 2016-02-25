@@ -15,6 +15,11 @@ h1,h2,h3,h4,h5,h6,div,span,p {
 	background: #D8412F;
 }
 
+.home-logo {
+  height: 180px;
+  width: 280px;
+}
+
 .dropbtn{
 	background: #FE7A47;
     border-radius: 5px;
