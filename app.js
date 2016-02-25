@@ -53,12 +53,10 @@ app.get('/current_room', index.current_room);
 app.get('/logout', index.logout);
 app.get('/edit_profile', edit_profile.get);
 
-
 app.post('/', home.view);
 app.post('/index', home.view);
 app.post('/home', home.receive);
-// Example route
-// app.get('/users', user.list);
+app.post('/my_profile', my_profile.receive);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -14,6 +14,17 @@ exports.get_my_profile = function(req,res){
   	});
 }
 
+exports.receive = function(req,res) {
+	/* "userName":"",
+		"hobbies":[],
+		"myers-briggs-type":"",
+		"socionics-type":"",
+		"favorite-lunch-spots":"",
+		*/
+    var user = req.body.user;
+    var pass = req.body.password;
+}
+
 /* FUNCTIONS */
 
 function getCurrentUserData() {
