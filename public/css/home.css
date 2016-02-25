@@ -40,3 +40,16 @@ a{
     text-decoration: underline;
     cursor: hand;
 }
+
+.help{
+    position: relative;
+    left: 60%;
+}
+
+.glyphicon-question-sign{
+	color: #D8412F;
+}
+
+.help-div{
+    margin: 15px;
+}

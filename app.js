@@ -15,6 +15,7 @@ var signup = require('./routes/signup');
 var my_profile = require('./routes/my_profile');
 var my_lunches = require('./routes/my_lunches');
 var edit_profile = require('./routes/edit_profile');
+var help = require('./routes/help');
 
 // Example route
 // var user = require('./routes/user');
@@ -52,6 +53,7 @@ app.get('/confirmation', index.confirmation);
 app.get('/current_room', index.current_room);
 app.get('/logout', index.logout);
 app.get('/edit_profile', edit_profile.get);
+app.get('/help', help.view);
 
 app.post('/', home.view);
 app.post('/index', home.view);
