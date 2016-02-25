@@ -20,7 +20,7 @@ exports.getIndex = function(req, res){
     res.render('index', {
 			'first' : session["firstName"],
 			'last' : session["lastName"]
-    });
+});
 };
 
 exports.logout = function(req, res){
