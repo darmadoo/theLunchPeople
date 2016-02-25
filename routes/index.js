@@ -6,14 +6,21 @@ var session = require("../session.json");
 var fs = require('fs');
 
 exports.getIndex = function(req, res){
-	if (session["firstName"]) {
-		res.render('home', {
+//	if (session["firstName"]) {
+//		res.render('home', {
+//			'first' : session["firstName"],
+//			'last' : session["lastName"]
+//		});
+//	} else {
+//		res.render('index', {
+//			'first' : session["firstName"],
+//			'last' : session["lastName"]
+//		});
+//	}
+    res.render('index', {
 			'first' : session["firstName"],
 			'last' : session["lastName"]
-		});
-	} else {
-		res.render('index');
-	}
+    });
 };
 
 exports.logout = function(req, res){
