@@ -1,0 +1,10 @@
+.particular-lunch-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px 10px 10px 10px;
+}
+
+.lunch-room-table {
+	background-color: rgba(0,0,0,0.2);
+}
