@@ -72,7 +72,7 @@ exports.current_room = function(req, res) {
 
 exports.current_room_b = function(req, res) {
 	data["profile"] = true;
-	res.render('current_room_b');
+	res.render('current_room', data);
 }
 
 
