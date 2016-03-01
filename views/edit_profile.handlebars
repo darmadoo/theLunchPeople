@@ -9,37 +9,49 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/my_profile.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/containers.css">
 
   </head>
   <body>
-    <div class="container">
-      <!-- dropdown menu -->
-      <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="/home">Home</a>
-          <a href="/my_lunches">Past Lunches</a>
-          <a href="/my_profile">My Profile</a>
-          <a href="/current_room">The Lunch Room</a>
-          <a href="/logout">Log Out</a>
-        </div>
+    <!-- dropdown menu -->
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="/home">Home</a>
+        <a href="/my_lunches">Past Lunches</a>
+        <a href="/my_profile">My Profile</a>
+        <a href="/current_room">The Lunch Room</a>
+        <a href="/logout">Log Out</a>
       </div>
-      <!-- end dropdown menu -->
-
+    </div>
+    <!-- end dropdown menu -->
+    <a href="/help">
+      <button type="button" class="btn btn-default help"> 
+        <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help
+      </button>
+    </a>
+    <div class="container">
       <form method="post" action="/my_profile">
-        <p>You got a nickname?</p>
-        <input type="text" name="nickname"></input>
-        <p>What is your Myers Briggs type?</p>
-        <input type="text" name="myers-briggs-type"></input>
-        <p>What is your socionics type?</p>
-        <input type="text" name="socionics-type"></input>
-        <p>What are some of your hobbies?</p>
-        <input type="text" name="hobbies"></input>
-        <p>What are some of your favorite lunch spots?</p>
-        <input type="textarea" name="favorite-lunch-spots"></input>
-        <button type="submit" class="login-btn">Submit Changes</button>
+        <div class="profile-query">
+          <p>What is your Myers Briggs type?</p>
+          <input type="text" name="myersBriggsBype"></input>
+        </div>
+        <div class="profile-query">
+          <p>What is your socionics type?</p>
+          <input type="text" name="socionicsType"></input>
+        </div>
+        <div class="profile-query">
+          <p>What are some of your hobbies?</p>
+          <input type="text" name="hobbies"></input>
+        </div>
+        <div class="profile-query">
+          <p>What are your favorite lunch spots?</p>
+          <input type="textarea" name="favoriteLunchSpots"></input>
+        </div>
+        <div style="margin-top: 15px;">
+          <button type="submit" class="login-btn" style="font-size: 15pt;">Submit Changes</button>
+        </div>
       </form>
     </div>
 
