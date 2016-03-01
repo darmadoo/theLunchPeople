@@ -58,10 +58,20 @@ exports.confirmation = function(req, res) {
 }
 
 exports.current_room = function(req, res) {
-	res.render('current_room');
+	var random_num = Math.random();
+	console.log(random_num);
+
+	if (random_num >= 0) {
+	  projects['profile'] = false;
+	  res.render('current_room', projects);
+	} else {
+	  res.redirect('/current_room_b');
+	}
+
 }
 
 exports.current_room_b = function(req, res) {
+	data["profile"] = true;
 	res.render('current_room_b');
 }
 
