@@ -2,6 +2,45 @@ var data = require("../data.json");
 
 exports.get_my_profile = function(req,res){
 
+  	renderMyProfile(res);
+}
+
+exports.receive = function(req,res) {
+
+	processReq(req);
+  	renderMyProfile(res);
+}
+
+/* FUNCTIONS */
+
+function processReq(req) {
+	/*
+		//fs.writeFile("session.json", {});
+    var mbti = req.body.myersBriggsType;
+    var socio = req.body.socionicsType;
+    var favoriteLunchSpots = req.body.favoriteLunchSpots;
+    var hobbies = req.body.hobbies;
+
+	var data = require("../data.json");
+	var currentUserData = getCurrentUserData();
+	var fs = require('fs');
+
+    if (mbti != "") {
+
+    }
+    if (socio != "") {
+    	
+    }
+    if (favoriteLunchSpots != "") {
+    	
+    }
+    if (hobbies != "") {
+    	
+    }
+    */
+}
+
+function renderMyProfile(res) {
 	var currentUserData = getCurrentUserData();
 
   	res.render('my_profile', {
@@ -13,19 +52,6 @@ exports.get_my_profile = function(req,res){
   		'MyersBriggs' : getMyersBriggs(currentUserData)
   	});
 }
-
-exports.receive = function(req,res) {
-	/* "userName":"",
-		"hobbies":[],
-		"myers-briggs-type":"",
-		"socionics-type":"",
-		"favorite-lunch-spots":"",
-		*/
-    var user = req.body.user;
-    var pass = req.body.password;
-}
-
-/* FUNCTIONS */
 
 function getCurrentUserData() {
 	var data = require("../data.json");
@@ -45,7 +71,7 @@ function getHobbies(currentUserData) {
 	} else {
 		var ret = "Hobbies include ";
 		for (var i = 0; i < currentUserData["hobbies"].length; i++) {
-			ret += currentUserData["hobbies"] + ", ";
+			ret += currentUserData["hobbies"][i] + ", ";
 		}
 		return ret;
 	}
@@ -60,7 +86,7 @@ function getFavLunchSpots(currentUserData) {
 }
 
 function getSocionics(currentUserData) {
-	if (currentUserData["socionics-type"] == "") {
+	if (currentUserData["socionics-type"] == undefined) {
 		return "";
 	} else {
 		return "Socionics type: " + currentUserData["socionics-type"];
@@ -68,7 +94,7 @@ function getSocionics(currentUserData) {
 }
 
 function getMyersBriggs(currentUserData) {
-	if (currentUserData["myers-briggs-type"] == "") {
+	if (currentUserData["myers-briggs-type"] == undefined) {
 		return "";
 	} else {
 		return "Myers-Briggs type: " + currentUserData["myers-briggs-type"];
