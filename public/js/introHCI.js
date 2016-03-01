@@ -14,6 +14,13 @@ function initializePage() {
 	// $('#colorBtn').click(randomizeColors);
 
 	//$(".login-btn").click(check);
+	$(".profile-btn").click(sendPress);
+}
+
+function sendPress(e){
+	e.preventDefault();
+	console.log("bam");
+ 	// ga("send", "event", 'like', 'click');
 }
 
 function check(e){
