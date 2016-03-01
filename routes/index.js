@@ -62,10 +62,10 @@ exports.current_room = function(req, res) {
 	console.log(random_num);
 
 	if (random_num >= 0) {
-	  projects['profile'] = false;
-	  res.render('current_room', projects);
+	  data['profile'] = false;
+	  res.render('current_room', data);
 	} else {
-	  res.redirect('/current_room_b');
+	  res.redirect('current_room_b');
 	}
 
 }
