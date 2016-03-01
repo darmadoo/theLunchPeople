@@ -5,7 +5,9 @@
 		"userName":"darmadoo",
 		"firstName":"Mark",
 		"lastName":"Darmadi",
-		"DOB":"10/10/1994","hobbies":["hearthstone","running","soccer"],"password":"sad"
+		"DOB":"10/10/1994","hobbies":["hearthstone","running","soccer"],"password":"sad",
+		"myers-briggs-type":"ESFP",
+		"socionics-type":"SEE"
 	}
 	]
 }

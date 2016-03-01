@@ -39,3 +39,9 @@
 	font-size: 13pt;
 	padding-left: 7px;
 }
+
+.profile-container {
+	background-color: rgba(0,0,0,0.5);
+	margin: 20px 7px 7px 7px;
+	padding-bottom: 10px;
+}

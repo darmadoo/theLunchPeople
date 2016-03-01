@@ -71,7 +71,7 @@ function getHobbies(currentUserData) {
 	} else {
 		var ret = "Hobbies include ";
 		for (var i = 0; i < currentUserData["hobbies"].length; i++) {
-			ret += currentUserData["hobbies"][i] + ", ";
+			ret += "<br>" + i + ".) " + currentUserData["hobbies"][i];
 		}
 		return ret;
 	}
@@ -81,7 +81,7 @@ function getFavLunchSpots(currentUserData) {
 	if (currentUserData["favorite-lunch-spots"] == "") {
 		return "";
 	} else {
-		return "";
+		return currentUserData["favorite-lunch-spots"];
 	}
 }
 
@@ -89,7 +89,7 @@ function getSocionics(currentUserData) {
 	if (currentUserData["socionics-type"] == undefined) {
 		return "";
 	} else {
-		return "Socionics type: " + currentUserData["socionics-type"];
+		return "Socionics: " + currentUserData["socionics-type"];
 	}
 }
 
@@ -97,7 +97,7 @@ function getMyersBriggs(currentUserData) {
 	if (currentUserData["myers-briggs-type"] == undefined) {
 		return "";
 	} else {
-		return "Myers-Briggs type: " + currentUserData["myers-briggs-type"];
+		return "MBTI: " + currentUserData["myers-briggs-type"];
 	}
 
 }

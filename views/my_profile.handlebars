@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/containers.css">
+    <link rel="stylesheet" href="css/text.css">
     
   </head>
   <body>
@@ -33,15 +35,44 @@
         <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Help
       </button>
     </a>
-      <div class="container">
+      <div class="container profile-container">
 
-        <h1 class="homepage-text">{{name}}</h1>
+        <h1 class="homepage-text profile-name">{{name}}</h1>
+        <p class="homepage-text center">{{ WorkMessage }}</p>
+        <hr></hr>
+        <div class="row">
+          <div class="col-xs-6">
+            <p class="homepage-text">Hobbies:</p>
+            <ul class="hobbies">
+              <li>Hearthstone</li>
+              <li>Running</li>
+              <li>Soccer</li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <p class="homepage-text">Top Lunch Spots:</p>
+            <ul class="hobbies">
+              <li>HRD</li>
+              <li>Salt House</li>
+              <li>Bombay Coast</li>
+            </ul>
+          </div>
+        </div>
 
-        <p class="homepage-text">{{ WorkMessage }}</p>
-        <p class="homepage-text">{{ Hobbies }}</p>
-        <p class="homepage-text">{{ FavLunchSpots }}</p>
-        <p class="homepage-text">{{ Socionics }}</p>
-        <p class="homepage-text">{{ MyersBriggs }}</p>
+        <p class="homepage-text center" style="font-size: 20pt;">Psychology</p>
+        <hr style="margin-top: -7px;"></hr>
+        <div class="row center">
+          <div class="col-xs-6">
+            <p class="homepage-text" style="font-size: 16pt;">{{ Socionics }}</p>
+            <p class="homepage-text" style="margin-top: -12px; font-size: 11pt;">"The Relaxed Enthusiast"</p>
+            <img src="images/socio-logo.gif" style="height: 100px; width: 100px;">
+          </div>
+          <div class="col-xs-6">
+            <p class="homepage-text" style="font-size: 16pt;">{{ MyersBriggs }}</p>
+            <p class="homepage-text" style="margin-top: -12px; font-size: 11pt;">"The Performer"</p>
+            <img src="images/mbti-logo.gif" style="height: 100px; width: 100px;">
+          </div>
+        </div>
       </div>
     </div>
 
